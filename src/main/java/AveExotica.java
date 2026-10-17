@@ -1,12 +1,10 @@
 public class AveExotica extends Paciente {
-    private double envergadura; // cm
+    private double envergadura; // en cm
 
     public AveExotica(String nombre, double peso, int edad, double envergadura) {
         super(nombre, peso, edad, 3.0, "INGRESADO");
-        if (peso > 15 || envergadura <= 0) {
-            throw new IllegalArgumentException("ERROR: datos invalidos");
-        }
-        this.envergadura = envergadura;
+        setPeso(peso);
+        setEnvergadura(envergadura);
     }
 
     @Override

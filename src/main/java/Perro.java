@@ -4,9 +4,7 @@ public class Perro extends Paciente {
 
     public Perro(String nombre, double peso, int edad, String raza, boolean vacunado) {
         super(nombre, peso, edad, 10.0, vacunado ? "INGRESADO" : "CUARENTENA");
-        if (peso > 80) {
-            throw new IllegalArgumentException("ERROR: datos invalidos");
-        }
+        setPeso(peso);
         this.raza = raza;
         this.vacunado = vacunado;
     }

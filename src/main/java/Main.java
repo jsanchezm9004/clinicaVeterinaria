@@ -5,6 +5,17 @@ public class Main {
         Hospital hospital = new Hospital();
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("\nESCRIBA UNA OPCIÓN DEL MENÚ:");
+        System.out.print("Ingresar PERRO <nombre> <peso> <edad> <raza> <si/no>\n");
+        System.out.print("Ingresar GATO <nombre> <peso> <edad>\n");
+        System.out.print("Ingresar AVE <nombre> <peso> <edad> <envergadura>\n");
+        System.out.print("Vacunar <nombre>\n");
+        System.out.print("Asignar <nombre>\n");
+        System.out.print("Medicar <nombre> <dosis>\n");
+        System.out.print("Alta <nombre>\n");
+        System.out.print("Reporte\n");
+        System.out.print("Salir\n\n");
+
         while (true) {
             if (!scanner.hasNextLine()) break;
             String linea = scanner.nextLine().trim();

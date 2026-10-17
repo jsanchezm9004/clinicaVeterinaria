@@ -3,10 +3,8 @@ public class Gato extends Paciente {
 
     public Gato(String nombre, double peso, int edad, int nivelEstres) {
         super(nombre, peso, edad, 6.0, "INGRESADO");
-        if (peso > 15 || nivelEstres < 0 || nivelEstres > 10) {
-            throw new IllegalArgumentException("ERROR: datos invalidos");
-        }
-        this.nivelEstres = nivelEstres;
+        setPeso(peso);
+        setNivelEstres(nivelEstres);
     }
 
     @Override

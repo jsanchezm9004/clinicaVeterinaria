@@ -71,7 +71,7 @@ public class Hospital {
         if (!vacunado) {
             return "OK: " + p.getNombre() + " ingresado en CUARENTENA";
         } else {
-            return "OK: " + p.getNombre() + " ingresado";
+            return "OK: " + p.getNombre() + " INGRESADO";
         }
     }
 
